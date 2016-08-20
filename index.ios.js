@@ -7,6 +7,6 @@
 import {
   AppRegistry,
 } from 'react-native';
-import ObserverInput from './app/observerAnInput';
+import LoginForm from './app/loginForm';
 
-AppRegistry.registerComponent('RxJS', () => ObserverInput);
+AppRegistry.registerComponent('RxJS', () => LoginForm);
