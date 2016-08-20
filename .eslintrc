@@ -1,11 +1,11 @@
 {
-  "parser": "babel-eslint",
+    "parser": "babel-eslint",
     "extends": [
       "airbnb",
     ],
     "plugins": [
       "react",
-    "immutable",
+			"immutable",
     ],
     "parserOptions": {
       "ecmaVersion": 6,
@@ -32,5 +32,8 @@
       "immutable/no-this": 2,
       "immutable/no-mutation": 2,
       "no-use-before-define": 0, // disallow use of variables before they are defined
+      "global-require": 0,
+			"react/jsx-indent": [2, "tab"]
+			"react/jsx-indent-props": [2, "tab"]
     }
 }

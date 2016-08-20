@@ -5,38 +5,38 @@ import {
   setObservableConfig,
 } from 'recompose';
 import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
+	View,
+	Text,
+	StyleSheet,
+	TextInput,
+	TouchableOpacity,
 } from 'react-native';
 import rxjsconfig from 'recompose/rxjsObservableConfig';
 
 setObservableConfig(rxjsconfig);
 
 const LoginForm = ({
-  onUsernameChange,
-  onPasswordChange,
-  isShowLoginButton,
+	onUsernameChange,
+	onPasswordChange,
+	isShowLoginButton,
 }) => (
-  <View style={styles.container}>
-    <Text style={styles.instructions}>
-      To get started, edit index.ios.js
-    </Text>
-    <View>
-      <TextInput
-        onChangeText={onUsernameChange}
-        style={{ width: 200, height: 40, borderColor: 'gray', borderWidth: 1 }}
-      />
-      <TextInput
-        onChangeText={onPasswordChange}
-        style={{ width: 200, height: 40, borderColor: 'gray', borderWidth: 1 }}
-      />
-    </View>
-    {isShowLoginButton &&
-      <TouchableOpacity><Text>{'Login'}</Text></TouchableOpacity>}
-  </View>
+	<View style={styles.container}>
+		<Text style={styles.instructions}>
+			To get started, edit index.ios.js
+		</Text>
+		<View>
+			<TextInput
+				onChangeText={onUsernameChange}
+				style={{ width: 200, height: 40, borderColor: 'gray', borderWidth: 1 }}
+			/>
+			<TextInput
+				onChangeText={onPasswordChange}
+				style={{ width: 200, height: 40, borderColor: 'gray', borderWidth: 1 }}
+			/>
+		</View>
+		{isShowLoginButton &&
+			<TouchableOpacity><Text>{'Login'}</Text></TouchableOpacity>}
+	</View>
 );
 
 const enhance = mapPropsStream(
